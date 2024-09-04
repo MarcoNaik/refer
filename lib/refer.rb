@@ -7,6 +7,7 @@ module Refer
 
   autoload :HasReferrals, "refer/has_referrals"
   autoload :Model, "refer/model"
+  autoload :Controller, "refer/controller"
 
   config_accessor :code_generator, default: ->(referrer) { SecureRandom.alphanumeric(8) }
   config_accessor :cookie_length, default: 30.days
